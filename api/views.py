@@ -47,7 +47,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
 
-openai.api_key = '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'
+openai.api_key = secrets['openapi']
 
 def generate_response(request, session_messages, temperature):
     try:
